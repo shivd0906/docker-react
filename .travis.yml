@@ -11,5 +11,11 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "test2"
-  env: "Test2-env"
+  app: "react"
+  env: "React-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-987167035609"
+  bucket_path: "react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
