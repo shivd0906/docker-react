@@ -11,10 +11,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "dash"
-  env: "Dash-env"
+  app: "board"
+  env: "Board-env"
   bucket_name: "myreactdocker"
-  bucket_path: "dash"
+  bucket_path: "board"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY_ID"
